@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://47.98.135.254:3306/admindashboard
+    driver-class-name: com.mysql.jdbc.Driver
+
+
+  #禁用thymeleaf缓存
+  thymeleaf:
+    cache: false
+
+
+##pagehelper配置
+pagehelper:
+    params: count=countSql
+    reasonable: true
+    support-methods-arguments: true
+
+    helper-dialect: mysql
