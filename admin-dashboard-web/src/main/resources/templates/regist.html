@@ -25,6 +25,8 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="/login/css/util.css">
 	<link rel="stylesheet" type="text/css" href="/login/css/main.css">
+
+
 <!--===============================================================================================-->
 </head>
 <body style="background-color: #666666;">
@@ -38,18 +40,18 @@
 					</span>
 
 
-					<div class="wrap-input100 validate-input" data-validate = "用户名不能为空">
+					<div class="wrap-input100 validate-input" >
 						<input class="input100"  name="username">
 						<span class="focus-input100"></span>
 						<span class="label-input100">用户名</span>
 					</div>
-					<div class="wrap-input100 validate-input" data-validate = "请输入正确的邮箱地址">
+					<div class="wrap-input100 validate-input" >
 						<input class="input100"  name="email">
 						<span class="focus-input100"></span>
 						<span class="label-input100">邮箱</span>
 					</div>
-					
-					<div class="wrap-input100 validate-input" data-validate="密码不能为空">
+
+					<div class="wrap-input100 validate-input" >
 						<input class="input100" type="password" name="password">
 						<span class="focus-input100"></span>
 						<span class="label-input100">密码</span>
@@ -69,16 +71,18 @@
 							</a>
 						</div>
 					</div>
-			
+
 
 					<div class="container-login100-form-btn">
-						<input class="login100-form-btn" type="submit" value="登录">
+						<input class="login100-form-btn" name="submit" type="submit" value="登录">
 
 						</input>
 					</div>
-					
+
 
 				</form>
+
+
 
 				<div class="login100-more" style="background-image: url('/login/images/bg-011.jpg');">
 				</div>
@@ -104,8 +108,10 @@
 	<script src="/login/vendor/daterangepicker/daterangepicker.js"></script>
 <!--===============================================================================================-->
 	<script src="/login/vendor/countdowntime/countdowntime.js"></script>
+
 <!--===============================================================================================-->
 	<script src="/login/js/main.js"></script>
+
 
 </body>
 </html>

@@ -1,6 +1,10 @@
 package com.braisedpanda.web.controller;
 
-import org.springframework.web.bind.annotation.PostMapping;
+import com.braisedpanda.commons.model.User;
+
+import com.braisedpanda.web.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
@@ -13,6 +17,9 @@ import org.springframework.web.servlet.ModelAndView;
  **/
 @RestController
 public class LoginController {
+
+    @Autowired
+    private UserService userService;
 
     /**
     * @Description: 跳转到登录界面
@@ -47,9 +54,9 @@ public class LoginController {
     }
 
     @RequestMapping("/regist")
-    public ModelAndView regist(){
-
-        return new  ModelAndView("login");
+    public ModelAndView regist(User user){
+        userService.insertUser(user);
+        return new  ModelAndView("index");
     }
 
     @RequestMapping("/toregist")

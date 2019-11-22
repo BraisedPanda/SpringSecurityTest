@@ -1,5 +1,6 @@
 package com.braisedpanda.web;
 
+import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,7 +14,7 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerA
  * @create: 2019-11-20 09:55
  **/
 @SpringBootApplication
-
+@RabbitListener
 public class WebApplication {
     public static void main(String[] args) {
         SpringApplication.run(WebApplication.class,args);

@@ -1,14 +1,50 @@
 spring:
-  datasource:
-    username: root
-    password: 123456
-    url: jdbc:mysql://47.98.135.254:3306/admindashboard
-    driver-class-name: com.mysql.jdbc.Driver
-
-
-  #禁用thymeleaf缓存
+  application:
+      name: admin-dashboard-web
+  main:
+      allow-bean-definition-overriding: true
   thymeleaf:
     cache: false
+    encoding: UTF-8
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+  http:
+    encoding:
+      enabled: true
+      charset: UTF-8
+  messages:
+    encoding: UTF-8
+
+
+  datasource:
+      type: com.alibaba.druid.pool.DruidDataSource
+      druid:
+        name: druidDataSource
+        username: root
+        password: 123456
+        url: jdbc:mysql://47.98.135.254:3306/admindashboard?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8
+        driver-class-name: com.mysql.jdbc.Driver
+        max-active: 20
+        initial-size: 1
+        use-global-data-source-stat: true
+        min-idle: 1
+        max-wait: 60000
+        max-open-prepared-statements: 20
+        pool-prepared-statements: true
+        time-between-eviction-runs-millis: 60000
+        min-evictable-idle-time-millis: 300000
+        validation-query: SELECT 1 FROM DUAL
+        test-while-idle: true
+        test-on-borrow: false
+        test-on-return: false
+
+  rabbitmq:
+      host: 47.98.135.254
+      username: admin     #默认是guest
+      password: admin  #默认是guest
+      virtual-host: my_vhost #默认是/
+      port: 5672  #默认是5672
 
 
 ##pagehelper配置
@@ -18,3 +54,8 @@ pagehelper:
     support-methods-arguments: true
 
     helper-dialect: mysql
+
+
+
+server:
+  port: 8100

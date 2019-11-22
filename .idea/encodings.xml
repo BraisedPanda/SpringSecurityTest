@@ -3,6 +3,10 @@
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin-dashboard-commons" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin-dashboard-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin-dashboard-user-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin-dashboard-user/admin-dashboard-user-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin-dashboard-user/admin-dashboard-user-provider" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin-dashboard-web" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>

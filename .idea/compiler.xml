@@ -8,12 +8,18 @@
         <outputRelativeToContentRoot value="true" />
         <module name="admin-dashboard-commons" />
         <module name="admin-dashboard-web" />
+        <module name="admin-rabbitmq-provider" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="admin-dashboard" target="1.8" />
       <module name="admin-dashboard-commons" target="1.8" />
+      <module name="admin-dashboard-user" target="1.8" />
+      <module name="admin-dashboard-user-api" target="1.8" />
+      <module name="admin-dashboard-user-provider" target="1.8" />
       <module name="admin-dashboard-web" target="1.8" />
+      <module name="admin-rabbitmq" target="1.8" />
+      <module name="admin-rabbitmq-provider" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
