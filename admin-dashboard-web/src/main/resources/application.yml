@@ -39,12 +39,24 @@ spring:
         test-on-borrow: false
         test-on-return: false
 
-  rabbitmq:
-      host: 47.98.135.254
-      username: admin     #默认是guest
-      password: admin  #默认是guest
-      virtual-host: my_vhost #默认是/
-      port: 5672  #默认是5672
+#  rabbitmq:
+#      host: 47.98.135.254
+#      username: admin
+#      password: admin
+#      virtual-host: my_vhost
+#      port: 5672
+##redis配置
+#  #redis
+#  redis:
+#    #redis机器ip
+#    host: 47.98.135.254
+#    #redis端口
+#    port: 6379
+#    #redis密码
+#    password:
+#    #redis超时时间（毫秒），如果不设置，取默认值2000
+#    timeout: 10000
+#
 
 
 ##pagehelper配置
